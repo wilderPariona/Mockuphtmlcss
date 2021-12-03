@@ -2,8 +2,9 @@
 
 ## Cosas Hechas:
 
-- Productos
-- Carrito
+- Productos desktop
+- Carrito desktop
+- -Ordenes desktop
 
 
 
