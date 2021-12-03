@@ -1,0 +1,186 @@
+.WrapperTrabajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;    
+    background-color: var(--color4);
+}
+
+.leftNavBar>*{
+    margin: 20px 10px;
+}
+
+.leftNavBar{
+    background-color: var(--color4);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.MainSection{
+    background-color: white;
+}
+
+
+@media only screen and (min-width: 768px){
+    .leftNavBar{
+        height: 100%;    
+        width: 200px;
+        
+    }
+    .MainSection{
+        width: calc(100%-200px);
+    }
+}
+
+.productCard{
+    width: 300px;
+    height: 308px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 308px;
+    max-height: 308px;
+    padding:15px;
+    margin:20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1) , 0px 4px 6px -2px rgba(0,0,0,0.05) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productCard__textZone{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productCard__image{
+    max-width: 208px;
+    max-height: 109px;
+    margin:auto;
+}
+.productCard__textZone__leftSide{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.productCard__textZone__rightSide{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.productCard__textZone__title{
+    font-size: var(--subheading);
+}
+
+.productCard__textZone__subtitle{
+    font-size: var(--subheading2);
+}
+
+.productCard__textZone__price{
+    font-size: var(--header5);
+}
+
+.productCard__textZone__actionButon{
+    background-color: var(--color5);
+    color: var(--white);
+}
+.productGrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sectionTitle{
+    color: var(--color1);
+    font-size: var(--header4);
+}
+
+.pricepart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--header7);
+    font-weight: bold;
+}
+
+.inputZone{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--header7);
+    font-weight: bold;
+    
+}
+
+.modalPagarPaypal, .modalPagarTarjeta{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fadegray);
+}
+
+.cardpaypal, .pagartarjeta{
+    width: 90%;
+    max-width:501px;
+    height: 554px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paypalcardLogo{
+    height:94px;
+}
+
+.paypalcard_top{
+display: flex;
+width: 90%;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.tarjetascardLogo{
+    width: 40%;
+    max-width: 200px;
+}
+
+.titlepaypalcard{
+    font-size: var(--header5);
+}
+
+.pagartarjeta>input, .cardpaypal> input {
+    margin: 20px auto;
+    max-width: 300px;
+    width:70%;
+    height:40px;
+}
+
+
+
+.TotalPayment{
+    font-size: var(--header5);
+}
+.button{
+    margin: 0 auto;
+}
