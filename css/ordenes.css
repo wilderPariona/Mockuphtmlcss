@@ -1,0 +1,54 @@
+.WrapperTrabajo h1{
+    margin-left: 15px;
+    color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.carOrden{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 600px;
+    width: 80%;
+}
+
+.carOrden .button{
+    margin: 15px auto;
+}
+
+
+.btnZone{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+.cardLogistica{
+    background-color: var(--white);
+    width:80%;
+    max-width: 800px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.cardLogistica img{
+    width: 100%;
+  ;
+}
+
+@media only screen and (min-width:768px){
+    .carOrden{
+        flex-direction: row;
+    }
+}
+

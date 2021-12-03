@@ -124,7 +124,7 @@
     
 }
 
-.modalPagarPaypal, .modalPagarTarjeta{
+.modalPedidoRecibido, .modalPagarPaypal, .modalPagarTarjeta{
     position: fixed;
     top: 0;
     left: 0;
@@ -184,3 +184,21 @@ align-items: center;
 .button{
     margin: 0 auto;
 }
+
+.pedidorecibido{
+    width:80%;
+    max-width: 600px;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedidorecibido span{
+    display: block;
+    color: white;
+    margin: 5px auto;
+    font-size: vaR(--header5);
+}
+
