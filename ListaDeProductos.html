@@ -10,7 +10,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/CargaListaDeProductos.css">
     <title>PHARZI</title>
 </head>
@@ -50,7 +49,15 @@
             </div>
         </div>
         <div class="subbar">
-            Carga De Productos 
+            Lista De Productos 
+            <div class="searchbar">
+                <form class="inputfield">
+                    <input class="searchbarinput">
+                    <div href="" class="searchbuttonicon">
+                        <img src="img/productos/searchicon.svg" alt="searchicon">
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="WrapperTrabajo">
            
@@ -76,7 +83,10 @@
                <input type="file" name="imagen" id="imagen">
             </div>
 
-            <button id="botonCrear">Crear producto</button>
+          <div>
+            <button id="botonEliminar" >Eliminar</button>   
+             <button id="botonActualizar" >Actualizar</button>
+            </div>
           </form>
 
 
