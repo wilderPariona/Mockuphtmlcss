@@ -20,7 +20,7 @@
         <div class="navbar">
             <div class="navbarLeftSide">
                 <a href="/" class="logo">
-                    <img src="img/general/logo.svg" alt="logo">
+                    <img class="logoimg" src="img/general/logo.svg" alt="logo">
                 </a>
             </div>
             <div class="navbarRightSide">
@@ -47,6 +47,7 @@
                 <a href="/" class="loginbutton button">
                     Ingresar
                 </a>
+                <img src="/img/general/menu-button-of-three-horizontal-lines.png" alt="hamburguermenu" id="navbarHamburguer">
             </div>
         </div>
         <div class="subbar">
@@ -57,7 +58,7 @@
             <div class="card carOrden">
                 <div class="LeftSide">
                     <h1>Orden 004</h1>
-                    <h2>$104.00</h2>
+                    <h2>$130.00</h2>
                     <h3>Entrega estimada: Lunes 27/12/2021</h3>
                 </div>
                 <div class="Rightside">
@@ -72,10 +73,10 @@
                     </div>
                 </div>
             </div>
-            <div class="card carOrden">
+            <div id="ordenaeliminar" class="card carOrden">
                 <div class="LeftSide">
-                    <h1>Orden 004</h1>
-                    <h2>$104.00</h2>
+                    <h1>Orden 005</h1>
+                    <h2>$130.00</h2>
                     <h3>Entrega estimada: Lunes 27/12/2021</h3>
                 </div>
                 <div class="Rightside">
@@ -85,7 +86,7 @@
                     <div class="button btn_color1">
                         Seguir pedido
                     </div>
-                    <div class="button btn_color5">
+                    <div id ="btneliminarorden" class="button btn_color5">
                         Cancelar pedido
                     </div>
                 </div>
@@ -94,8 +95,8 @@
             <h1>Entregados</h1>
             <div class="card carOrden">
                 <div class="LeftSide">
-                    <h1>Orden 004</h1>
-                    <h2>$104.00</h2>
+                    <h1>Orden 001</h1>
+                    <h2>$130.00</h2>
                     <h3>Entrega estimada: Lunes 27/12/2021</h3>
                 </div>
                 <div class="Rightside">
@@ -112,8 +113,8 @@
             </div>
             <div class="card carOrden">
                 <div class="LeftSide">
-                    <h1>Orden 004</h1>
-                    <h2>$104.00</h2>
+                    <h1>Orden 002</h1>
+                    <h2>$130.00</h2>
                     <h3>Entrega estimada: Lunes 27/12/2021</h3>
                 </div>
                 <div class="Rightside">
@@ -130,8 +131,8 @@
             </div>
             <div class="card carOrden">
                 <div class="LeftSide">
-                    <h1>Orden 004</h1>
-                    <h2>$104.00</h2>
+                    <h1>Orden 003</h1>
+                    <h2>$130.00</h2>
                     <h3>Entrega estimada: Lunes 27/12/2021</h3>
                 </div>
                 <div class="Rightside">
@@ -148,7 +149,7 @@
             </div>
             
         </div>
-        <div class="modal modalPedidoRecibido">
+        <div id="modaleliminar" class="modal modalPedidoRecibido">
             <div class="card pedidorecibido">
                 
                     <div class="titlecard">
@@ -165,7 +166,7 @@
                </div>
             </div>
         </div>
-        <div class="modal modalLogistica">
+        <div id="modallogistica" class="modal modalLogistica">
             <div class="card cardLogistica">
                 <img src="img/ordenes/estadologistico.png">
                 <div class="button btn_color6">
@@ -205,4 +206,5 @@
     </div>
 </body>
 <script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/ordenes.js"></script>
 </html>
