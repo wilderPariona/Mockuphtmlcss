@@ -7,6 +7,7 @@
     --black: #000;
     --white: #fff;
     --fadegray: #2c2c2c96;
+    --darkfadegray: #2c2c2cd8;
     --header1: 90px;
     --header2: 60px;
     --header3: 48px;
@@ -184,3 +185,75 @@ color: var(--white);
     border-radius: 25px;
 }
 
+#navbarHamburguer{
+    display: none;
+    height: 30px;
+    margin: auto 20px;
+    cursor:pointer;
+}
+
+.logoimg{
+    height: 50px;
+}
+
+.modalnavbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--darkfadegray);
+    display: none;
+    flex-direction: column;
+}
+.modalnavbar>.modalmenubar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.navbarloginbutton{
+    color: var(--color1);
+    font-size: var(--subheading2);
+    background-color: var(--white);
+    margin: 10px auto;
+}
+
+#navbarclosebutton{
+    display: none;
+    position: fixed;
+    top:20px;
+    right: 15px;
+    height: 30px;
+}
+
+
+@media only screen and (max-width:1024px){
+    #navbarclosebutton{
+        display: flex;
+    }
+
+
+    .menubar{
+        display: none;
+        flex-direction: row;
+    }
+    .loginbutton{
+        display: none;
+        color: var(--color1);
+        font-size: var(--subheading2);
+        background-color: var(--white);
+    }
+    #navbarHamburguer{
+        display: block;
+    }
+    .logoimg{
+        height: 40px;
+        margin: auto 5px;
+    }
+    .modalnavbar{
+        display: none;
+    }
+}
