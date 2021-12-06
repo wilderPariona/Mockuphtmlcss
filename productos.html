@@ -53,11 +53,11 @@
         <div class="subbar">
             Productos
             <div class="searchbar">
-                <form class="inputfield">
+                <form id="inputfield" class="inputfield">
                     <input class="searchbarinput">
-                    <div href="" class="searchbuttonicon">
+                    <a href="/productos/prednisona.html" class="searchbuttonicon">
                         <img src="img/productos/searchicon.svg" alt="searchicon">
-                    </div>
+                    </a>
                 </form>
             </div>
         </div>
@@ -81,7 +81,7 @@
                             <div class="productCard__textZone__price">
                                 $13.00
                             </div>
-                            <div class="productCard__textZone__actionButon button">
+                            <div id="btnagregarproducto" class="productCard__textZone__actionButon button">
                                 Agregar
                             </div>
                         </div>
@@ -430,17 +430,46 @@
                 <div class="prompt">
                     Se ha añadido al carrito
                 </div>
-                <div class="buttonbuy button">
+                <div id="btnregresaragaleria" class="buttonbuy button">
                     Seguir comprando
                 </div>
-                <div class="buttontocart button">
+                <a href="/carrito.html" class="buttontocart button">
                     Ir al carrito
-                </div>
+                </a>
             </div>
+        </div>
+    </div>
+    <div class="modalzone">
+        <div class="modalnavbar" id="modalnavbar">
+            <div class="modalmenubar">
+                <a href="/misrecetas.html" class="menuItem">
+                    Mis recetas
+                </a>
+                <a href="/subirrecetas.html" class="menuItem">
+                    Subir recetas
+                </a>
+                <a href="/mispedidos.html" class="menuItem">
+                    Mis pedidos
+                </a>
+                <a href="/carrito.html" class="menuItem">
+                    Carrito
+                </a>
+                <a href="/productos.html" class="menuItem">
+                    Productos
+                </a>
+                <a href="/profile.html" class="menuItem">
+                    Perfil
+                </a>
+            </div>
+            <a href="/" class="navbarloginbutton button">
+                Ingresar
+            </a>
+            <img src="/img/general/close.png" alt="navbarclosebutton" class="navbarclosebutton" id="navbarclosebutton">
         </div>
     </div>
 </body>
 
-
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/productos.js"></script>
 
 </html>

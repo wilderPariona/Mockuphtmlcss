@@ -202,3 +202,15 @@ align-items: center;
     font-size: vaR(--header5);
 }
 
+.modalPagarPaypal{
+    display: none;
+}
+
+.modalPagarTarjeta{
+    display: none;
+}
+
+.modalPedidoRecibido{
+    display: none;
+}
+
