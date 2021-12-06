@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/CargaListaDeProductos.css">
+    <title>PHARZI</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="navbarLeftSide">
+                <a href="/" class="logo">
+                    <img src="img/general/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="navbarRightSide">
+                <div class="menubar">
+                    <a href="/misrecetas.html" class="menuItem">
+                        Mis recetas
+                    </a>
+                    <a href="/subirrecetas.html" class="menuItem">
+                        Subir recetas
+                    </a>
+                    <a href="/mispedidos.html" class="menuItem">
+                        Mis pedidos
+                    </a>
+                    <a href="/carrito.html" class="menuItem">
+                        Carrito
+                    </a>
+                    <a href="/productos.html" class="menuItem">
+                        Productos
+                    </a>
+                    <a href="/profile.html" class="menuItem">
+                        Perfil
+                    </a>
+                </div>
+                <a href="/" class="loginbutton button">
+                    Ingresar
+                </a>
+            </div>
+        </div>
+        <div class="subbar">
+            Carga De Productos 
+        </div>
+        <div class="WrapperTrabajo">
+           
+          <form action="">
+
+            <div class="formDivCargaLista">
+                <label for="nombre" id="labelNombre">Nombre Producto</label>
+                <input type="text" name="nombre" id="nombre" >
+            </div>
+            
+            <div class="formDivCargaLista">
+                <label for="Descripción" id="labelDescripción">Descripción</label>
+                <textarea name="Descripción" id="descripción" cols="30" rows="10" ></textarea>
+            </div>
+
+            <div class="formDivCargaLista">
+                <label for="precio" id="labelPrecio">Precio</label>
+                <input type="number" name="precio" id="precio" >
+            </div>
+
+            <div class="formDivCargaLista">
+                <label for="imagen"  id="labelImagen">Imagen</label>
+               <input type="file" name="imagen" id="imagen">
+            </div>
+
+            <button id="botonCrear">Crear producto</button>
+          </form>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

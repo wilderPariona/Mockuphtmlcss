@@ -1,0 +1,387 @@
+:root {
+    --color1: #3CA8D3;
+    --color2: #F9CF70;
+    --color3: #5BBAF4;
+    --color4: #F7F1E6;
+    --color5: #d61f12;
+    --black: #000;
+    --white: #fff;
+    --fadegray: #2c2c2c96;
+    --header1: 90px;
+    --header2: 60px;
+    --header3: 48px;
+    --header4: 34px;
+    --header5: 24px;
+    --header6: 20px;
+    --header7: 18px;
+    --subheading: 16px;
+    --subheading2: 14px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.wrapper{
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: var(--color1);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.subbar{
+    background-color: var(--color4);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color1);
+    font-size: var(--header2);
+    padding: 20px;
+    font-weight: bold;
+}
+.menubar{
+    display: flex;
+    flex-direction: row;
+}
+.menuItem{
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: var(--subheading2);
+    cursor: pointer;
+}
+.navbarRightSide{
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    font-size: var(--subheading2);
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: auto 5px;
+    cursor: pointer; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.loginbutton{
+    color: var(--color1);
+    font-size: var(--subheading2);
+    background-color: var(--white);
+}
+
+.card{
+    padding:15px;
+    margin:20px;
+    border-radius: 5%;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1) , 0px 4px 6px -2px rgba(0,0,0,0.05) ;
+}
+
+
+/**Colores solidos letras blancas o negras**/
+
+.btn_color1{
+background-color: var(--color1);
+color: var(--white);
+}
+
+
+.btn_color2{
+    background-color: var(--color2);
+    color: var(--black);
+}
+
+
+.btn_color3{
+    background-color: var(--color3);
+    color: var(--white);
+}
+
+.btn_color4{
+    background-color: var(--color4);
+    color: var(--black);
+}
+.btn_color5{
+    background-color: var(--color5);
+    color: var(--white);
+}
+
+/**Fondo blanco, letras y borde de color**/
+
+.btn_color6{
+    color: var(--color1);
+    background-color: var(--white);
+    border: solid 1px var(--color1);
+    }
+
+.btn_color7{
+    color: var(--black);
+    background-color: var(--white);
+    border: solid 1px var(--color2);
+    }
+
+.btn_color8{
+    color: var(--color3);
+    background-color: var(--white);
+    border: solid 1px var(--color3);
+    }
+
+.btn_color9{
+    color: var(--color5);
+    background-color: var(--white);
+    border: solid 1px var(--color5);
+    }
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fadegray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedidorecibido{
+ background-color: var(--color1); 
+ width: 80%;
+ max-width: 600px; 
+ display: flex;
+ flex-direction: column;
+ justify-items: center;
+ align-items: center;
+}
+
+.titlecard{
+    color: white;
+    font-size: var(--header4);
+}
+
+.card{
+    border-radius: 25px;
+}
+
+/**formularios, label e Inputs **/
+
+.formDivCargaLista{
+
+    
+    margin-top: 25px;
+    
+    color: black   ;
+    font-size: 20px ;
+   font-weight: bold;
+}
+
+.formDivAlarma{
+
+   
+    margin-top: 70px;
+    
+    color: black   ;
+    font-size: 20px ;
+   font-weight: bold;
+}
+
+
+#labelNombre{
+    
+    
+    border: black;
+    margin-right: 63px;
+    margin-left: 200px;
+}
+
+#labelDescripción{
+    
+    margin-right: 115px;
+    margin-left: 200px;
+}
+
+#labelPrecio{
+    
+    margin-right: 163px;
+    margin-left: 200px;
+}
+
+#labelImagen{
+    
+    margin-right: 153px;
+    margin-left: 200px;
+}
+
+#labelMedicamento{
+    
+    
+    margin-right: 100px;
+    margin-left: 200px;
+}
+
+#labelDosis{
+    
+    margin-right: 147px;
+    margin-left: 200px;
+    
+}
+
+#labelHora{
+    
+    margin-right: 180px;
+    margin-left: 200px;
+}
+
+
+#nombre{
+    width: 800px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid  var(--color1);
+    box-shadow: 0px 2px 3px var(--color1);
+    background-color: #fbfbfb;
+}
+
+
+#descripción{
+    width: 800px;
+    border-radius: 8px;
+    border: 1px solid  var(--color1);
+    box-shadow: 0px 2px 3px var(--color1);
+    background-color: #fbfbfb;border: 1px solid  var(--color1);
+}
+
+#precio{
+    width: 800px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid  var(--color1);
+    box-shadow: 0px 2px 3px var(--color1);
+    background-color: #fbfbfb;
+}
+
+#medicamento{
+    width: 800px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid  var(--color1);
+    box-shadow: 0px 2px 3px var(--color1);
+    background-color: #fbfbfb;
+}
+
+
+#dosis{
+    width: 800px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid  var(--color1);
+    box-shadow: 0px 2px 3px var(--color1);
+    background-color: #fbfbfb;
+}
+
+
+#hora{
+    width: 800px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid  var(--color1);
+    box-shadow: 0px 2px 3px var(--color1);
+    background-color: #fbfbfb;
+}
+
+
+#botonCrear {
+
+    color: var(--white);
+    background-color:  var(--color1);
+    border: solid 1px var(--color1);
+    margin-top: 50px;
+    margin-left: 1093px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    
+}
+
+#botonEliminar {
+
+    color: var(--white);
+    background-color:  var(--color1);
+    border: solid 1px var(--color1);
+    margin-top: 30px;
+    margin-left: 1010px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+}
+
+#botonActualizar {
+
+    color: var(--white);
+    background-color:  var(--color1);
+    border: solid 1px var(--color1);
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+}
+
+#botonFinalizar {
+
+    color: var(--white);
+    background-color:  var(--color1);
+    border: solid 1px var(--color1);
+    margin-top: 70px;
+    margin-left: 1135px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+}
+
+.inputfield{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchbarinput{
+    height: 40px;
+    min-width: 300px;
+    border: none;
+}
+
+.searchbuttonicon{
+    height: 40px;
+    width:40px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbuttonicon img{
+    width: 110%;
+    height: 110%;
+}
+
+.searchbar{
+    margin-left: 355px;
+}
