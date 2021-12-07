@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title>PHARZI - Iniciar sesión</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div class="navbarLeftSide">
+          <a href="/" class="logo">
+            <img class="logoimg" src="/img/general/logo.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+
+      <div class="card wrapper-login">
+        <div class="login-logo">
+          <img src="/img/general/logo-only.svg" alt="logo" />
+        </div>
+
+        <h1 class="login-title">Iniciar sesión</h1>
+
+        <form action="" class="login-form">
+          <div class="login-form-field">
+            <label for="input-correo" id="input-correo-label" class="required">Correo</label>
+            <input type="email" name="correo" id="input-correo" required />
+          </div>
+
+          <div class="login-form-field">
+            <label for="input-pass" id="input-pass-label" class="required">Contraseña</label>
+            <input type="password" name="pass" id="input-pass" required />
+          </div>
+
+          <button id="login-form-button" type="submit">Iniciar sesión</button>
+        </form>
+
+        <div class="login-form-bottom">
+          <!-- <p>¿Olvidaste tu contraseña?</p> -->
+          <span>¿No tienes una cuenta? <a href="/auth/registro.html">Regístrate</a></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
