@@ -65,3 +65,10 @@ input {
   font-size: var(--subheading2);
   text-align: center;
 }
+
+.descripcion {
+  font-size: var(--subheading2);
+  /* text-align: center; */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
