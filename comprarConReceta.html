@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/receta.css" />
+    <title>PHARZI</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div class="navbarLeftSide">
+          <a href="/" class="logo">
+            <img class="logoimg" src="img/general/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="navbarRightSide">
+          <div class="menubar">
+            <a href="/misrecetas.html" class="menuItem"> Mis recetas </a>
+            <a href="/subirrecetas.html" class="menuItem"> Subir recetas </a>
+            <a href="/mispedidos.html" class="menuItem"> Mis pedidos </a>
+            <a href="/carrito.html" class="menuItem"> Carrito </a>
+            <a href="/productos.html" class="menuItem"> Productos </a>
+            <a href="/profile.html" class="menuItem"> Perfil </a>
+          </div>
+          <a href="/" class="loginbutton button"> Ingresar </a>
+          <img
+            src="/img/general/menu-button-of-three-horizontal-lines.png"
+            alt="hamburguermenu"
+            id="navbarHamburguer"
+          />
+        </div>
+      </div>
+
+      <div class="subbar">Compra con Receta</div>
+      <div class="WrapperTrabajo">
+        <div class="advance">
+          <img src="/img/receta/avance.svg" alt="Avance" width="300" />
+        </div>
+        <div class="body-receta">
+          <img src="/img/receta/doctor.svg" alt="doctor" width="360" />
+          <div class="form-receta">
+            <h3 class="heading">Subir Receta</h3>
+            <div class="uploadImg">
+              <label for="imagen" id="labelImagen">Receta</label>
+              <input type="file" name="imagen" id="imagen" />
+            </div>
+            <div class="buttons">
+              <button class="button">
+                <a href="/selectDireccion.html">Siguiente</a>
+              </button>
+              <button class="button cancel">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modalzone">
+      <div class="modalnavbar" id="modalnavbar">
+        <div class="modalmenubar">
+          <a href="/misrecetas.html" class="menuItem"> Mis recetas </a>
+          <a href="/subirrecetas.html" class="menuItem"> Subir recetas </a>
+          <a href="/mispedidos.html" class="menuItem"> Mis pedidos </a>
+          <a href="/carrito.html" class="menuItem"> Carrito </a>
+          <a href="/productos.html" class="menuItem"> Productos </a>
+          <a href="/profile.html" class="menuItem"> Perfil </a>
+        </div>
+        <a href="/" class="navbarloginbutton button"> Ingresar </a>
+        <img
+          src="/img/general/close.png"
+          alt="navbarclosebutton"
+          class="navbarclosebutton"
+          id="navbarclosebutton"
+        />
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="/js/navbar.js"></script>
+</html>
